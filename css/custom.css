@@ -64,6 +64,17 @@ button {
     background: #121a2e;
 }
 
+.cta-white {
+    color: #121a2e;
+    background: #ffffff;
+
+}
+
+.cta-white:hover {
+    color: #192440;
+    background: #ffffff;
+}
+
 #banner {
     background-size: cover;
     opacity: 0.85;
@@ -85,11 +96,11 @@ button {
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    background: linear-gradient(168deg, #ffffff 55%, #192440 0);
 }
 
 #feature-last {
-    background: #00FFAD;
+    background: #192440;
 }
 
 /********** price table **********/
