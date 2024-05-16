@@ -110,6 +110,7 @@ button {
 }
 
 #price-table__premium {
+    border-radius: 15%;
     background: #192440;
     color: #ffffff;
 }
