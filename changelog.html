@@ -50,22 +50,147 @@
         <h2 class="text-center font-weight-bold my-5">New version, World of Engineers v2 is out! <br> What's new?</h2>
         <div class="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img style="border-radius: 10%;" src="img/quests.png" alt="quests" class="mx-auto">
+                <img style="border-radius: 8%;" src="img/quests.png" alt="quests" id="myImg" class="mx-auto">
                 <h4>Quests</h4>
                 <p>elroNd worked hard for this lmao</p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img style="border-radius: 10%;" src="img/gui.png" alt="ingame gui" class="mx-auto">
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img style="border-radius: 8%;" src="img/gui.png" alt="In-game GUI" id="myImg2" class="mx-auto">
                 <h4>GUI Overhaul</h4>
             </div>
-            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img style="border-radius: 10%;" src="img/null.png" alt="" class="mx-auto">
-                <h4>Quality of Life Improvements</h4>
+            &nbsp;
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img style="border-radius: 8%;" src="img/esc_menu.png" alt="New Escape Menu" id="myImg3" class="mx-auto">
             </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img style="border-radius: 8%;" src="img/resourcebişiysi.png" alt="New Resource Pack" id="myImg4" class="mx-auto">
+            </div>
+            &nbsp;
+            <div style="padding-right: 6%;" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-6 text-md-right" >
+                <h4>New Resource Packs</h4>
+            </div>
+
         </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img style="border-radius: 8%;" class="modal-content" id="img01">
+            <div id="caption">Quests</div>
+          </div>
+        <div id="myModal2" class="modal">
+            <span class="close2">&times;</span>
+            <img style="border-radius: 8%;" class="modal-content" id="img02">
+            <div id="caption2">In-Game menu</div>
+          </div>
+          <div id="myModal3" class="modal">
+            <span class="close3">&times;</span>
+            <img style="border-radius: 8%;" class="modal-content" id="img03">
+            <div id="caption3">Escape Menu</div>
+          </div>
+        <div id="myModal4" class="modal">
+            <span class="close4">&times;</span>
+            <img style="border-radius: 8%;" class="modal-content" id="img04">
+            <div id="caption4">New Resource Pack</div>
+          </div>
         <p data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" style="font-size: 200%; text-align: center; margin-top: 100px;">And much more that I am to lazy to code and add here. xD</p>
     </div>
-  
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+
+</script>
+<script>
+
+    // Get the modal
+    var modal = document.getElementById("myModal2");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg2");
+    var modalImg = document.getElementById("img02");
+    var captionText = document.getElementById("caption2");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close2")[0];
+    
+     // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    } 
+    
+    </script>
+    <script>
+
+        // Get the modal
+        var modal = document.getElementById("myModal3");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg3");
+        var modalImg = document.getElementById("img03");
+        var captionText = document.getElementById("caption3");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close3")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        } 
+        
+        </script>
+        <script>
+        
+        // Get the modal
+        var modal = document.getElementById("myModal4");
+            
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg4");
+        var modalImg = document.getElementById("img04");
+        var captionText = document.getElementById("caption4");
+           img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+        // Get the <span> element that closes the modal
+         var span = document.getElementsByClassName("close4")[0];
+            
+        // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            } 
+            
+        </script>
+        
+
     <!-- contact -->
     <div class="jumbotron jumbotron-fluid contact-text" id="contact" style="background-image: url(img/woe_2.png);">
         <div class="container my-5">
